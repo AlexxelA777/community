@@ -1,0 +1,47 @@
+{
+    "1": {
+        "method": "changeColumn",
+        "params": [
+            "core_oauth_authorize_prompts",
+            "response_type",
+            {
+                "name": "response_type",
+                "type": "ENUM",
+                "length": null,
+                "decimals": null,
+                "values": [
+                    "code",
+                    "token"
+                ],
+                "allow_null": false,
+                "default": "code",
+                "comment": "The response type",
+                "unsigned": false,
+                "zerofill": false,
+                "auto_increment": false,
+                "binary": false
+            }
+        ]
+    },
+    "2": {
+        "method": "changeColumn",
+        "params": [
+            "core_admin_permission_rows",
+            "row_id",
+            {
+                "name": "row_id",
+                "type": "BIGINT",
+                "length": 20,
+                "decimals": null,
+                "values": [],
+                "allow_null": false,
+                "default": "0",
+                "comment": "",
+                "unsigned": false,
+                "zerofill": false,
+                "auto_increment": false,
+                "binary": false
+            }
+        ]
+    }
+}
