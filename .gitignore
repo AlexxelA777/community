@@ -1,21 +1,21 @@
-# ignore everything in the root except the "wp-content" directory.
-!wp-content/
+.idea
+.DS_Store
+.vscode/
+banners
+imgs
+*.sh
+*.log
+*/go/*
+.htaccess
+sitemap.xml
+sitemap.xml.gz
 
-# ignore everything in the "wp-content" directory, except:
-# "mu-plugins", "plugins", "themes" directory
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+# Temporary ignore parent theme
+/.htpasswd
+/images
+/temp
+*.sql
 
-# ignore these plugins
-wp-content/plugins/hello.php
-
-# ignore specific themes
-wp-content/themes/twenty*/
-
-# ignore node dependency directories
-node_modules/
 # Node
 logs
 *.pid
@@ -29,20 +29,16 @@ node_modules
 npm-debug.log
 .sass-cache
 bower_components
-wp-content/themes/mrbet/grunt/source/*/lib/*
 license.txt
 readme.html
-# ignore log files and databases
-*.log
-*.sql
-*.sqlite
 
-.htaccess
-sitemap.xml
-sitemap.xml.gz
-wp-config.php
-# Temporary ignore parent theme
-/.htpasswd
-/images
-/temp
-.idea
+nginx.conf
+Nginx-1.12_vhost.conf
+
+composer.lock
+package-lock.json
+
+/uploads/
+/datastore/
+/constants.php
+/conf_global.php

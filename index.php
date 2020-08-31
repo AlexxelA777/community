@@ -1,17 +1,13 @@
 <?php
 /**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
+ * @brief		Public bootstrap
+ * @author		<a href='https://www.invisioncommunity.com'>Invision Power Services, Inc.</a>
+ * @copyright	(c) Invision Power Services, Inc.
+ * @license		https://www.invisioncommunity.com/legal/standards/
+ * @package		Invision Community
+ * @since		18 Feb 2013
  */
-
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define( 'WP_USE_THEMES', true );
-
-/** Loads the WordPress Environment and Template */
-require __DIR__ . '/wp-blog-header.php';
+define('REPORT_EXCEPTIONS', TRUE);
+$_SERVER['SCRIPT_FILENAME']	= __FILE__;
+require_once 'init.php';
+\IPS\Dispatcher\Front::i()->run();
